@@ -13,7 +13,9 @@ void gotoxy(int x, int y)
 
 int main()
 {
-    FILE *fi = fopen("vnr.in", "rb");
+    char name[100];
+    scanf("%s", name);
+    FILE *fi = fopen(name, "rb");
     while (1)
     {
         char ch;
@@ -28,7 +30,7 @@ int main()
             printf("sdfsdf\n");
             system("cls");
             fgets(s, 1000, fi);
-            gotoxy(((infoo.srWindow.Right) / 2) - strlen(s) / 2+1, infoo.srWindow.Bottom - 5);
+            gotoxy(((infoo.srWindow.Right) / 2) - strlen(s) / 2 + 1, infoo.srWindow.Bottom - 5);
             printf("%s", s);
         }
     }
