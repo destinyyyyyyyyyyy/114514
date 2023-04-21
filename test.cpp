@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <iostream>
 
 int main()
 {
-    printf("hello zxc\n");
+    std::cout << "114514" << std::endl;
     return 0;
 }
